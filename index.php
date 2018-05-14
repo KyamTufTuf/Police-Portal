@@ -7,7 +7,7 @@
         <!--[if IE]>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
             <![endif]-->
-            <title>LSPD PANEL</title>
+            <title>Painel Policial</title>
             <!-- BOOTSTRAP CORE STYLE  -->
             <link href="assets/css/bootstrap.css" rel="stylesheet" />
             <!-- FONT AWESOME STYLE  -->
@@ -16,6 +16,8 @@
             <link href="assets/css/style.css" rel="stylesheet" /> 
             <!-- GOOGLE FONT -->
             <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
         </head>
         <?php
 session_start();
@@ -39,11 +41,11 @@ if (isset($_SESSION['id'])) {
                             <span class="icon-bar"></span>
                         </button>
                         <a class="navbar-brand" href="index.php">
-                            <img src="https://i.imgur.com/BQoTEoz.png" width=180 height=70/>
+                            <img src="https://i.imgur.com/oVTxjCC.png" width="240" height="105"/>
                         </a>
                     </div>
                     <div class="right-div">
-                        <a href="logout.php" class="btn btn-danger pull-right">LOG ME OUT</a>
+                        <a href="logout.php" class="btn btn-danger pull-right">Finalizar</a>
                     </div>
                 </div>
             </div>
@@ -55,10 +57,10 @@ if (isset($_SESSION['id'])) {
                             <div class="navbar-collapse collapse ">
                                 <ul id="menu-top" class="nav navbar-nav navbar-right">
                                     <li>
-                                        <a href="index.php" class="menu-top-active"> Home</a>
+                                        <a href="index.php" class="menu-top-active"><i class="fas fa-home"></i> INICIO</a>
                                     </li>
                                     <li>
-                                        <a href="add_criminal.php">Add a criminal</a>
+                                        <a href="add_criminal.php"><i class="fas fa-bars"></i> Fichar Criminoso</a>
                                     </li>
                                 </ul>
                             </div>
@@ -71,7 +73,7 @@ if (isset($_SESSION['id'])) {
                 <div class="container">
                     <div class="row pad-botm">
                         <div class="col-md-12">
-                            <h4 class="header-line">LSPD PANEL</h4>
+                            <h4 class="header-line">Painel Policial</h4>
                         </div>
                     </div>
                     <div class="row">
@@ -83,14 +85,14 @@ if (isset($_SESSION['id'])) {
                                         <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                             <thead>
                                                 <tr>
-                                                    <th>Id</th>
-                                                    <th>Name</th>
-                                                    <th>User ID</th>
-                                                    <th>Steam ID</th>
+                                                    <th>Nº</th>
+                                                    <th>Nome</th>
+                                                    <th>RG</th>
+                                                    <th>Crime Hediondo</th>
                                                     <th>Crime</th>
-                                                    <th>Sanction, fine, ..</th>
+                                                    <th>Tempo de Prisão</th>
                                                     <th>
-                                                    Delete
+                                                    Deletar
                                                     </th>
                                                 </tr>
                                             </thead>
@@ -174,8 +176,8 @@ if (isset($_SESSION['id'])) {
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-                   &copy; 2017 LSPD |
-            <a href="https://www.youtube.com/user/davendrix" target="_blank"  > Coded by : Davendrix</a>
+                   &copy; 2018 PAINEL |
+            <a> Feito por: Davendrix - Modificações por: Mayk</a>
         </div>
     </div>
 </div> </section> <!-- FOOTER SECTION END--> <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  --> <!-- CORE JQUERY  --> <script src="assets/js/jquery-1.10.2.js"></script> <!-- BOOTSTRAP SCRIPTS  --> <script src="assets/js/bootstrap.js"></script> <!-- DATATABLE SCRIPTS  --> <script src="assets/js/dataTables/jquery.dataTables.js"></script> <script src="assets/js/dataTables/dataTables.bootstrap.js"></script> <!-- CUSTOM SCRIPTS  --> <script src="assets/js/custom.js"></script> </body>';

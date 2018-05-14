@@ -1,8 +1,8 @@
 <?php
-$username = "police-portal"; // username
-$password = "your password"; // password of the database
-$hostname = "localhost"; // host of the database
-$namebase = "police"; // name of the database
+$username = "root"; // username
+$password = ""; // password of the database
+$hostname = "127.0.0.1"; // host of the database
+$namebase = "vrpfx"; // name of the database
 
 
 
